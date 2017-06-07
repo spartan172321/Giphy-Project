@@ -26,7 +26,7 @@ function createButtons(){
     // assign var name to the button's data-name when clicked
     var name = $(this).attr("data-name");
     // combine name with the rest of the URL and make sure the limit is 10
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q="+name+"&limit=10&api_key=dc6zaTOxFJmzC";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q="+name+"&limit=10&api_key=dc6zaTOxFJmzC";
       // Creating an AJAX call for the specific button being clicked
     $.ajax({
         url: queryURL,
